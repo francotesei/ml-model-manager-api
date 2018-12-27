@@ -15,25 +15,25 @@ trait FeatureHelper {
       }
 
 
-  /**
-  TODO
-    * @param featureDFs
-    * @param featureCols
-    * @param oheCols
-    * @return
-    */
 
   /*
-
-  def ohEncodeFeatures( featureDFs: Map[String, DataFrame], featureCols: Array[String],
-                        oheCols: Array[String]): Array[OneHotEncoderEstimator] =
-    featureCols
-      .zip(oheCols)
-      .map { case (name, ohe) =>
-        new OneHotEncoderEstimator().setInputCol(name).setOutputCol(ohe)
-      }
-
+/**
+  * @param featureDFs
+  * @param featureCols
+  * @param oheCols
+  * @return
   */
+
+
+def ohEncodeFeatures( featureDFs: Map[String, DataFrame], featureCols: Array[String],
+                      oheCols: Array[String]): Array[OneHotEncoderEstimator] =
+  featureCols
+    .zip(oheCols)
+    .map { case (name, ohe) =>
+      new OneHotEncoderEstimator().setInputCol(name).setOutputCol(ohe)
+    }
+
+*/
   /**
     *
     * @param featureDFs
